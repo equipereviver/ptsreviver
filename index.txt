@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Terapeutico Singular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #004080;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .checkbox-group {
+            margin-left: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Projeto Terapeutico Singular</h2>
+
+<div class="section">
+    <h3>1. Questões Prioritarias</h3>
+    <div class="checkbox-group">
+        <input type="checkbox" id="alcool1"> Dependencia e abuso do alcool<br>
+        <input type="checkbox" id="alcool2"> Abstinencia manifestada por sinais e sintomas relacionados a quadro de sindrome de abstinencia alcoolica<br>
+        <input type="checkbox" id="alcool3"> Consumo para aliviar ou evitar sintomas de abstinencia (uso para conseguir dormir, acordar, etc)<br>
+        <input type="checkbox" id="alcool4"> Cuidados relacionados a SAA que envolvem medicacao, controle de sinais e prevencao de riscos (SAA grave, delirium, etc)<br>
+        <input type="checkbox" id="alcool5"> Desejo de diminuir padrao de consumo de bebida alcoolica (dose, frequencia, etc)<br>
+        <input type="checkbox" id="alcool6"> Necessidade de abstinencia de bebida alcoolica por questoes clinicas (ex: cirrose hepatica, demencia alcoolica, hepatopatias, etc)<br>
+        <input type="checkbox" id="alcool7"> Uso abusivo de bebida alcoolica implicando em questoes interpessoais e/ou de trabalho<br>
+        <input type="checkbox" id="alcool8"> Uso de alcool associado a problemas de saude mental, como depressao ou transtornos de ansiedade<br>
+        <input type="checkbox" id="alcool9"> Dependencia e abuso de alcool como mecanismo de enfrentamento de estressores emocionais ou psicossociais<br>
+        <input type="checkbox" id="alcool10"> Monitoramento dos efeitos cronicos do uso excessivo de alcool na saude fisica, como doencas cardiacas e neurodegenerativas<br>
+        <h4>Uso de BA e/ou multicas substancias:</h4>
+        <input type="checkbox" id="substancia1"> Dependencia e abuso de outras SPAS (descrever)<br>
+        <input type="checkbox" id="substancia2"> Uso recorrente da substancia resultando no fracasso em cumprir obrigacoes importantes relativas a seu papel no trabalho, na escola ou em casa<br>
+        <input type="checkbox" id="substancia3"> Uso intenso de SPAS agudizando quadro psiquiatrico de base, como psicose ou transtornos afetivos<br>
+        <input type="checkbox" id="substancia4"> Uso recorrente da substancia em situacoes nas quais isto representa perigo fisico (ex: dirigir sob efeito, acidentes, comportamento impulsivo)<br>
+        <input type="checkbox" id="substancia5"> Problemas legais recorrentes relacionados a substancia (prisões, multas, processos legais)<br>
+        <input type="checkbox" id="substancia6"> Uso continuado da substancia, apesar de problemas sociais ou interpessoais persistentes ou recorrentes (isolamento social, conflitos familiares)<br>
+        <input type="checkbox" id="substancia7"> Necessidade de quantidades progressivamente maiores da substancia para adquirir a intoxicacao ou efeito desejado<br>
+        <input type="checkbox" id="substancia8"> Acentuada reducao do efeito com o uso continuado da mesma quantidade de substancia (tolerancia)<br>
+        <input type="checkbox" id="substancia9"> Desejo persistente ou esforcos mal-sucedidos no sentido de reduzir ou controlar o uso da substancia<br>
+        <input type="checkbox" id="substancia10"> Gasto de tempo excessivo em atividades necessarias para a obtencao da substancia, negligenciando outras areas da vida<br>
+        <input type="checkbox" id="substancia11"> Abandono de importantes atividades sociais, ocupacionais em virtude do uso da substancia<br>
+        <input type="checkbox" id="substancia12"> Uso continuado da SPA de abuso apesar da consciencia de ter um problema fisico ou psicologico persistente ou recorrente que tende a ser causado ou exacerbado pela substancia<br>
+        <input type="checkbox" id="substancia13"> Uso de multicas substancias psicoativas com o objetivo de potencializar os efeitos e reduzir a sensacao de abstinencia<br>
+        <input type="checkbox" id="substancia14"> Preocupacao excessiva com o proximo uso da substancia, que afeta a rotina e as atividades diarias<br>
+        <input type="checkbox" id="substancia15"> Comorbidades psiquiatricas associadas ao uso de substancias (ex: transtorno de personalidade, transtornos de ansiedade, depressao grave)<br>
+        <input type="checkbox" id="substancia16"> Impacto do uso de substancias sobre o desenvolvimento de quadros de saude mental em adolescentes e jovens adultos<br>
+        <input type="checkbox" id="substancia17"> Uso de substancias psicoativas no contexto de violencia domestica e/ou abuso sexual<br>
+        <input type="checkbox" id="substancia18"> Alteracoes cognitivas e comportamentais associadas ao uso cronico de substancias (ex: amnesia, desorganizacao do pensamento, impulsividade)<br>
+        <input type="checkbox" id="substancia19"> Identificacao precoce de comportamentos de risco, como automutilacao, suicidio ou tendencias violentas<br>
+        <input type="checkbox" id="substancia20"> Vulnerabilidade social e economica dos usuarios, como falta de emprego, moradia e apoio familiar<br>
+        <input type="checkbox" id="substancia21"> Importancia da atencao a saude familiar e ao impacto do uso de substancias na dinamica familiar e nos filhos<br>
+    </div>
+</div>
+
+<div class="section">
+    <h3>2. Objetivos de Curto Prazo</h3>
+    <div class="checkbox-group">
+        <input type="checkbox" id="objetivo1"> Construir cuidado pautado nas praticas de reducao de danos, sem necessariamente exigir a abstinencia imediata<br>
+        <input type="checkbox" id="objetivo2"> Mantenção da proposta do cuidado em reducao de danos, respeitando o ritmo e as decisoes do usuario<br>
+        <input type="checkbox" id="objetivo3"> Construir espacos em que o usuario possa problematizar o consumo abusivo de SPAS e suas implicacoes, sem julgamento<br>
+        <input type="checkbox" id="objetivo4"> Cuidado em saude mental visando a abstinencia da substancia de abuso, com foco no fortalecimento psiquico do usuario<br>
+        <input type="checkbox" id="objetivo5"> Vinculacao com o servico para a construcao de cuidados pertinentes a clinica AD e o cuidado em saude mental, com integracao de equipes multidisciplinares<br>
+        <input type="checkbox" id="objetivo6"> Acolher usuario, uso e seu sofrimento, pensando no Caps como dispositivo que facilita a reestruturação do cuidado integral em saude mental, transpondo os conceitos de patologia e de diagnostico<br>
+        <input type="checkbox" id="objetivo7"> Ressaltar a subjetividade e singularidade no cuidado e na construcao do Projeto Terapeutico Singular (PTS)<br>
+        <input type="checkbox" id="objetivo8"> Ofertar cuidados pensando no sofrimento psiquico, momentos de uso mais abusivo, vulnerabilidades inerentes, entre outros<br>
+        <input type="checkbox" id="objetivo9"> Realizar avaliacoes continuas do estado de saude mental, fisico e social do usuario, para ajustar o plano de cuidados conforme necessidade<br>
+        <input type="checkbox" id="objetivo10"> Iniciar a identificacao de redes de apoio familiar e social para facilitar a reintegracao do usuario a sociedade<br>
+        <input type="checkbox" id="objetivo11"> Fomentar a aceitacao da ajuda atraves de estrategias de motivacao, como a entrevista motivacional<br>
+        <input type="checkbox" id="objetivo12"> Oferecer suporte psicossocial em situacoes de crise, com intervencoes de curto prazo, visando estabilizacao emocional<br>
+    </div>
+</div>
+
+<button onclick="gerarTexto()">Gerar Projeto</button>
+
+<div id="output">
+    <h3>Projeto Gerado:</h3>
+    <pre id="textoGerado"></pre>
+</div>
+
+<script>
+    function gerarTexto() {
+        let textoFinal = "Projeto Terapeutico Singular:\n\n";
+
+        // Questões prioritárias
+        textoFinal += "1. Questões Prioritarias:\n";
+        let checkboxesPrioritarias = document.querySelectorAll('input[type="checkbox"]:checked');
+        checkboxesPrioritarias.forEach((checkbox) => {
+            textoFinal += "- " + checkbox.nextElementSibling.textContent + "\n";
+        });
+
+        // Objetivos de curto prazo
+        textoFinal += "\n2. Objetivos de Curto Prazo:\n";
+        let checkboxesObjetivos = document.querySelectorAll('input[type="checkbox"]:checked');
+        checkboxesObjetivos.forEach((checkbox) => {
+            textoFinal += "- " + checkbox.nextElementSibling.textContent + "\n";
+        });
+
+        // Exibe o texto gerado
+        document.getElementById('textoGerado').textContent = textoFinal;
+    }
+</script>
+
+</body>
+</html>
