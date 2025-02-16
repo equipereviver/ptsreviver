@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Terapêutico Singular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #004080;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .checkbox-group {
+            margin-left: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Projeto Terapêutico Singular</h2>
+
+<div class="section">
+    <h3>1. Questões Prioritárias</h3>
+    <div class="checkbox-group">
+        <input type="checkbox" id="alcool1"> Dependência e abuso do álcool<br>
+        <input type="checkbox" id="alcool2"> Abstinência manifestada por sinais e sintomas relacionados a quadro de síndrome de abstinência alcoólica<br>
+        <input type="checkbox" id="alcool3"> Consumo para aliviar ou evitar sintomas de abstinência (uso para conseguir dormir, acordar, etc)<br>
+        <input type="checkbox" id="alcool4"> Cuidados relacionados a SAA que envolvem medicação, controle de sinais e prevenção de riscos<br>
+        <input type="checkbox" id="alcool5"> Desejo de diminuir padrão de consumo de bebida alcoólica (dose, frequência, etc)<br>
+    </div>
+</div>
+
+<div class="section">
+    <h3>2. Objetivos de Curto Prazo</h3>
+    <div class="checkbox-group">
+        <input type="checkbox" id="objetivo1"> Construir cuidado pautado nas práticas de redução de danos<br>
+        <input type="checkbox" id="objetivo2"> Manutenção da proposta do cuidado em redução de danos<br>
+        <input type="checkbox" id="objetivo3"> Construir espaços em que o usuário possa problematizar o consumo abusivo de SPAS<br>
+        <input type="checkbox" id="objetivo4"> Cuidado em saúde mental visando a abstinência da substância de abuso<br>
+    </div>
+</div>
+
+<button onclick="gerarTexto()">Gerar Projeto</button>
+
+<div id="output">
+    <h3>Projeto Gerado:</h3>
+    <pre id="textoGerado"></pre>
+</div>
+
+<script>
+    function gerarTexto() {
+        let textoFinal = "Projeto Terapêutico Singular:\n\n";
+
+        // Coletar as seleções da seção de Questões Prioritárias
+        if (document.getElementById('alcool1').checked) {
+            textoFinal += "- Dependência e abuso do álcool\n";
+        }
+        if (document.getElementById('alcool2').checked) {
+            textoFinal += "- Abstinência manifestada por sinais e sintomas relacionados a quadro de síndrome de abstinência alcoólica\n";
+        }
+        if (document.getElementById('alcool3').checked) {
+            textoFinal += "- Consumo para aliviar ou evitar sintomas de abstinência (uso para conseguir dormir, acordar, etc)\n";
+        }
+        if (document.getElementById('alcool4').checked) {
+            textoFinal += "- Cuidados relacionados a SAA que envolvem medicação, controle de sinais e prevenção de riscos\n";
+        }
+        if (document.getElementById('alcool5').checked) {
+            textoFinal += "- Desejo de diminuir padrão de consumo de bebida alcoólica (dose, frequência, etc)\n";
+        }
+
+        // Coletar as seleções da seção de Objetivos de Curto Prazo
+        if (document.getElementById('objetivo1').checked) {
+            textoFinal += "- Construir cuidado pautado nas práticas de redução de danos\n";
+        }
+        if (document.getElementById('objetivo2').checked) {
+            textoFinal += "- Manutenção da proposta do cuidado em redução de danos\n";
+        }
+        if (document.getElementById('objetivo3').checked) {
+            textoFinal += "- Construir espaços em que o usuário possa problematizar o consumo abusivo de SPAS\n";
+        }
+        if (document.getElementById('objetivo4').checked) {
+            textoFinal += "- Cuidado em saúde mental visando a abstinência da substância de abuso\n";
+        }
+
+        // Exibir o texto gerado
+        document.getElementById('textoGerado').textContent = textoFinal;
+    }
+</script>
+
+</body>
+</html>
